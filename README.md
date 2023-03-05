@@ -2,48 +2,44 @@
 
 ## Functionalities
 
+- Users can track TV shows'/ movies' release dates by their referenced IMDB/TheMovieDatabase identifiers
+- Users can tick TV shows/movies as already watched
+- Users can enable alerts/ weekly reports of upcoming movies by email
+
 ## Entities
 
+- User
+  - Third party authentication identifier
+    - Can NEXT Auth be integrated?
+  - Tracked shows
+    - Watched episodes
+  - Tracked movies
+    - Watched movies
+  - Alerts
+  - Permissions?
+- TV Show
+  - Internal ID
+  - External/reference id
+    - IMDB?
+    - TheMovieDatabase?
+  - Overall title
+  - Show banner link
+  - Episodes
+    - Title
+    - Air date
+    - Episode banner link
+- Movie
+  - Internal ID
+  - External/reference id
+    - IMDB?
+    - TheMovieDatabase?
+  - Title
+  - Movie banner link
+  - Air date
 
-# Nuxt 3 Minimal Starter
+## Technologies
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- Database: PostgreSQL
+- ORM: Prisma
+- Backend & Frontend: Nuxt.js 3
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
